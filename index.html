@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High School Courses & Descriptions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="https://resources.finalsite.net/images/f_auto,q_auto/v1772208214/worthingtonk12ohus/l6fcb65rqgdztpaisqsg/BlueFavicon.png">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>High School Courses & Descriptions</h1>
+      <div id="header">
+        <div id="filters">
+          <div class="custom-select">
+            <select id="high-school">
+              <option value="blank" disabled selected>Select a High School</option>
+              <option value="TWHS">Thomas Worthington</option>
+              <option value="WKHS">
+                Worthington Kilbourne
+              </option>
+              <option value="Both">All High Schools</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select id="grade-level">
+              <option value="blank" disabled selected>Select a Grade Level</option>
+              <option value="9">9th Grade</option>
+              <option value="10">10th Grade</option>
+              <option value="11">11th Grade</option>
+              <option value="12">12th Grade</option>
+              <option value="C">College Course</option>
+              <option value="A">All Grade Levels</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select id="subject">
+                <option value="blank" disabled selected>Select a Subject</option>
+              <option value="English">English</option>
+              <option value="Math">Mathematics</option>
+              <option value="Science">Science</option>
+              <option value="Social Studies">Social Studies</option>
+              <option value="Wrld Language">World Language</option>
+              <option value="Fine Arts">Fine Arts</option>
+              <option value="Perf. Arts">Performing Arts</option>
+              <option value="Health & PE">
+                Health and Physical Education
+              </option>
+              <option value="Tech & Engr">
+                Technology and Engineering
+              </option>
+              <option value="FCS">
+                Family and Consumer Science
+              </option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+          <button id="clear-filters">
+              <img
+                id="clear-filters"
+                src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png"
+              />
+            </button>
+        </div>
+
+
+        <div id="navbar">
+          <img id="searchimg" />
+          <!-- From Uiverse.io by mrhyddenn -->
+          <div class="form__group field">
+            <input
+              type="input"
+              id="search"
+              class="form__field"
+              placeholder="Courses"
+              required=""
+            />
+            <label for="courses" class="form__label">Search Courses</label>
+          </div>
+          <button id="gridbtn">
+            <img
+              id="grid"
+              src="https://cdn-icons-png.flaticon.com/128/2769/2769160.png"
+            />
+          </button>
+          <button id="listbtn">
+            <img
+              id="list"
+              src="https://cdn-icons-png.flaticon.com/128/151/151917.png"
+            />
+          </button>
+        </div>
+      </div>
+      <div id="line"></div>
+      <div id="content"></div>
+    </div>
+    <div id="course-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+    <script src="index.js"></script>
+  </body>
+</html>
